@@ -1,0 +1,9 @@
+.trainingDay{
+    padding: 1.25rem;
+}
+
+.titleInTrainingDay{
+    display: inline-block;
+    min-width: 9.25rem;
+    margin-bottom: 1.25rem;
+}
