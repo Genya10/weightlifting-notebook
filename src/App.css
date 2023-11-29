@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 62.5rem;
+  padding: 1.875rem;
+  margin: auto;
+  background-color: yellowgreen;
+  margin-bottom: 3.125rem;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+}
