@@ -10,9 +10,6 @@ export type PostsArray= {
   numb:number
   }[];
 
-
-
-
 function App() {
 
   const [posts,setPosts]=useState<PostsArray>([

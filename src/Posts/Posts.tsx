@@ -1,5 +1,6 @@
 import React from "react";
 import { PostsArray } from "../App";
+import { Main } from "../Main/Main";
 
 type PostsProps={
     posts:PostsArray
@@ -8,7 +9,9 @@ type PostsProps={
 export const Posts=(props:PostsProps)=>{
     return(
         <div>
-
-        </div>
+      {props.posts.map(post=>(
+        <Main key={post.id} id={post.id} numb={post.numb}/>)   
+      )}
+       </div>
     )
 }
