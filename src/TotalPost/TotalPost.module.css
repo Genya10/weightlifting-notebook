@@ -1,0 +1,23 @@
+.totalPost{
+    display: flex;
+    gap:10px;
+    margin-top: 10px;
+}
+.total{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+.postBtn{
+    height: 25px; 
+    background-color: orange;
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+h5{
+    width: 10px;
+    text-align: center;
+    padding-top: 3px;
+}

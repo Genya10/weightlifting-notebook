@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import cl from "./WeightOnTraining.module.css";
+import { TotalPost } from "../TotalPost/TotalPost";
 
 export const WeightOnTraining = () => {
   const [inputOne, setInputOne] = useState(0);
@@ -35,6 +36,14 @@ export const WeightOnTraining = () => {
             <button onClick={inputGroupSecond}>Sum</button>
             <button onClick={()=>{setInputSecond(0)}}>Reset</button>
             </div>
+            <TotalPost
+                inputFirst={inputFirst}
+                inputSecond={inputSecond}
+                inputTwo={inputTwo}
+                inputThree={inputThree}
+                inputFive={inputFive}
+                inputSix={inputSix}
+                />
      </div>
   )
 };
