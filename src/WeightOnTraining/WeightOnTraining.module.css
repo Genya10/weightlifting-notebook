@@ -1,0 +1,26 @@
+input,
+span{
+    margin-right: 0.625rem;
+}
+button{
+    margin-right: 0.3rem;
+}
+.sum{
+    display: inline-block;
+    background-color: yellowgreen;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    min-width: 3rem;
+    text-align: center;
+    margin-left: 0.625rem;
+    margin-right: 2rem;
+    margin-top: 0.2rem;
+}
+.inpNumb{
+    border: 0.06rem solid black;
+    width:3.1rem;
+    margin-left: 0.625rem;
+}
+.btnReset{
+    margin-left: 1rem;
+}
