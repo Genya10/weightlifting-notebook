@@ -1,5 +1,6 @@
-import React,{useState} from "react";
+import React,{useState,useContext} from "react";
 import cl from "./TotalPost.module.css";
+import { Context } from "../App";
 
 type PropsTotalPost={
     inputFirst:number,
@@ -7,10 +8,13 @@ type PropsTotalPost={
     inputTwo:number,
     inputThree:number,
     inputFive:number,
-    inputSix:number,
+    inputSix:number,   
 }
 
-export const TotalPost=(props:PropsTotalPost)=>{
+
+export const TotalPost=(props:PropsTotalPost )=>{
+
+    const {updateTotal,updateTotalNumber} = useContext(Context);
     
     const[total,setTotal]=useState(0);
     const[totalNumber,setTotalNumber]=useState(0);
@@ -18,14 +22,18 @@ export const TotalPost=(props:PropsTotalPost)=>{
 
     const getTotal=()=>{
        setTotal(props.inputFirst + props.inputSecond)
+       const newTotal = props.inputFirst + props.inputSecond;
+       updateTotal(newTotal)
       }
       const getTotalNumber=()=>{
        setTotalNumber((props.inputTwo*props.inputThree)+(props.inputFive*props.inputSix))
-      }
+      const newTotalNumber = (props.inputTwo*props.inputThree)+(props.inputFive*props.inputSix);
+       updateTotalNumber(newTotalNumber);
+    }
       const getAverage=()=>{
         setAverage(Number((total/totalNumber).toFixed(2)));      
       }
-      
+
     return(
         <div className={cl.totalPost}>
       <div className={cl.total}>
