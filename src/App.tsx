@@ -4,6 +4,7 @@ import { Photo } from './Photo/Photo';
 import { Titles } from './Titles/Titles';
 import { TrainingDay } from './TrainingDay/TrainingDay';
 import { Posts } from './Posts/Posts';
+import { Footer } from './Footer/Footer';
 
 export type PostsArray= {
   id:number,
@@ -24,6 +25,7 @@ function App() {
    <TrainingDay/>
    <Titles/>
    <Posts posts={posts}/>
+   <Footer/>
     </div>
   );
 }

@@ -1,0 +1,36 @@
+.footer{
+    margin-left: 2.5rem;
+}
+.footerCount{
+    display: flex;
+    margin-top: 0.625rem;
+}
+.titleFooter{
+    width:12.5rem;
+    text-transform: uppercase;
+}
+.footerNumb{   
+    width: 2rem;
+    text-align: center;
+}
+.footerBtn{
+ background-color:blue;
+ font-weight: 700;
+ width: 4.3rem;
+ border-radius: 0.75rem;
+ cursor: pointer;
+ margin-left: 0.625rem;
+ padding-top: 0.2rem;
+ padding-bottom: 0.2rem;
+ border:none;
+}
+.footerBtn:hover{
+    background-color: brown;
+    transform: scale(1.2,1.2);
+    transition: all 0.5s;
+}
+span{
+    width: 1.25rem;
+    text-align: center;
+    font-weight: 500;
+}
