@@ -5,3 +5,13 @@
     border: 0.125rem solid blue;
     padding: 0.625rem;
 }
+.inputExersice{
+    width: 11.5rem;
+    margin-left: 0.5rem;
+    height: 1.25rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-top: 0.5rem;
+}

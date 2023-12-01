@@ -13,7 +13,7 @@ export const Main=(props:MainProps)=>{
         <div className={cl.main}>
             <div>
            <b>{props.numb}</b>
-           <input type="text" placeholder="exersice"/>
+           <input className={cl.inputExersice} type="text" placeholder="exersice"/>
            <Counter/>
            </div>
            <div>
