@@ -18,9 +18,11 @@ export const WeightOnTraining = () => {
   const [inputSecond, setInputSecond] = useState(0);
 
   const inputsGroupFirst = () => {
+
     return setInputFirst(inputOne * inputTwo * inputThree);
   };
   const inputGroupSecond = () => {
+ 
     return setInputSecond(inputFor * inputFive * inputSix);
   };
 
@@ -30,15 +32,15 @@ export const WeightOnTraining = () => {
         <input className={cl.inpNumb}  onChange={(e)=>setInputTwo(Number(e.target.value))} />*
          <input className={cl.inpNumb}  onChange={(e)=>setInputThree(Number(e.target.value))}/>
          <span className={cl.sum}>{inputFirst} </span>
-         <button onClick={inputsGroupFirst}>Sum</button>
-         <button onClick={()=>{setInputFirst(0)}}>Reset</button>
+         <button className={cl.btnSumReset} onClick={inputsGroupFirst}>Sum</button>
+         <button className={cl.btnSumReset} onClick={()=>{setInputFirst(0)}}>Reset</button>
         <div>
           <input className={cl.inpNumb}  onChange={(e)=>setInputFor(Number(e.target.value))}/><span>kg</span>*
           <input className={cl.inpNumb}  onChange={(e)=>setInputFive(Number(e.target.value))}/>*
           <input className={cl.inpNumb}  onChange={(e)=>setInputSix(Number(e.target.value))}/>
           <span className={cl.sum}>{inputSecond} </span>
-          <button onClick={inputGroupSecond}>Sum</button>
-          <button onClick={()=>{setInputSecond(0)}}>Reset</button>
+          <button className={cl.btnSumReset} onClick={inputGroupSecond}>Sum</button>
+          <button className={cl.btnSumReset} onClick={()=>{setInputSecond(0)}}>Reset</button>
           </div>  
           <TotalPost
                 inputFirst={inputFirst}

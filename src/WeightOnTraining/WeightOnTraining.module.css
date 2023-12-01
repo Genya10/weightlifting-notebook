@@ -7,7 +7,6 @@ button{
 }
 .sum{
     display: inline-block;
-    background-color: yellowgreen;
     border-radius: 0.5rem;
     font-weight: 700;
     min-width: 3rem;
@@ -18,9 +17,16 @@ button{
 }
 .inpNumb{
     border: 0.06rem solid black;
+    font-weight: 600;
     width:3.1rem;
     margin-left: 0.625rem;
+    text-align: center;
 }
-.btnReset{
-    margin-left: 1rem;
+.btnSumReset{
+   background-color: gray;
+   font-weight: 600;
+   padding: 0.18rem 0.31rem;
+   border-radius: 0.75rem;
+   cursor: pointer;
+   border: 0.06rem solid black;
 }

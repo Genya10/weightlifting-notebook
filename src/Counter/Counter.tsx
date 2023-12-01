@@ -15,8 +15,8 @@ export const Counter =()=>{
     return(
         <div>
             <span>{counter}</span>
-            <button onClick={counterPlus}>Attempt</button>
-            <button onClick={counterReset}>Reset</button>
+            <button className={cl.btnCounter} onClick={counterPlus}>Attempt</button>
+            <button className={cl.btnCounter} onClick={counterReset}>Reset</button>
         </div>
     )
 }

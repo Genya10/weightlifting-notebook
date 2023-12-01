@@ -6,15 +6,21 @@
 .total{
     display: flex;
     justify-content: center;
-    gap: 3px;
+    gap: 0.5rem;
 }
 .postBtn{
-    height: 25px; 
+    height:1.56rem; 
     background-color: orange;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     font-weight: 600;
-    padding: 2px 8px;
+    padding: 0.125rem 0.5rem;
     cursor: pointer;
+    border: none;
+}
+.postBtn:hover{
+   background-color: blue;
+   color: white;
+   transition: all 0.7s ease;
 }
 h5{
     width: 10px;

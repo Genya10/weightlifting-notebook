@@ -8,11 +8,12 @@
   width: 62.5rem;
   padding: 1.875rem;
   margin: auto;
-  background-color: yellowgreen;
+  
   margin-bottom: 3.125rem;
 }
 h1{
     text-align: center;
     text-transform: uppercase;
     color: red;
+    text-shadow: 0.125rem 0.0625rem rgba(0, 0, 0, 0.758);
 }

@@ -17,6 +17,7 @@ export const TotalPost=(props:PropsTotalPost )=>{
     const {updateTotal,updateTotalNumber} = useContext(Context);
     
     const[total,setTotal]=useState(0);
+    console.log(total)
     const[totalNumber,setTotalNumber]=useState(0);
     const[average,setAverage]=useState(0);
 
