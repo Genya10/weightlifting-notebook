@@ -20,15 +20,15 @@ export const TotalPost=(props:PropsTotalPost )=>{
     const[totalNumber,setTotalNumber]=useState(0);
     const[average,setAverage]=useState(0);
 
-    const getTotal=()=>{
-       setTotal(props.inputFirst + props.inputSecond)
+    const getTotal=()=>{       
        const newTotal = props.inputFirst + props.inputSecond;
+       setTotal(newTotal)
        updateTotal(newTotal)
       }
-      const getTotalNumber=()=>{
-       setTotalNumber((props.inputTwo*props.inputThree)+(props.inputFive*props.inputSix))
+      const getTotalNumber=()=>{      
       const newTotalNumber = (props.inputTwo*props.inputThree)+(props.inputFive*props.inputSix);
-       updateTotalNumber(newTotalNumber);
+      setTotalNumber(newTotalNumber)
+      updateTotalNumber(newTotalNumber);
     }
       const getAverage=()=>{
         setAverage(Number((total/totalNumber).toFixed(2)));      

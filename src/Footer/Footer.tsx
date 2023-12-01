@@ -1,6 +1,5 @@
 import React, { useState,useContext } from "react";
 import cl from "./Footer.module.css";
-import { Context } from "../App";
 
 type PropsFooter ={
  total:any,
@@ -14,10 +13,20 @@ export const Footer = (props:PropsFooter)=>{
     const [averageAll,setAverageAll]=useState(0);
 
     const getAllTotal =()=>{
-        setTotalAll(props.total)
+        let count = 0;
+        //let arr = props.total;
+        for(let i = 0; i < props.total.length;i++){
+          count += props.total[i];
+        }
+        setTotalAll(count);
     }
     const getAllNumbers =()=>{
-        setNumbersAll(props.totalNumber)
+        let count = 0;
+        //let arr = props.totalNumber;
+        for(let i = 0; i< props.totalNumber.length; i++){
+            count += props.totalNumber[i]
+        }
+        setNumbersAll(count)
     }
     const getAllAverage=()=>{
         setAverageAll(Number((totalAll/numbersAll).toFixed(2)));
