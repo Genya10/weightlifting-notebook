@@ -3,8 +3,8 @@ import cl from "./Footer.module.css";
 import { Context } from "../App";
 
 type PropsFooter ={
- total:number,
- totalNumber:number,
+ total:any,
+ totalNumber:any,
 }
 
 export const Footer = (props:PropsFooter)=>{

@@ -1,8 +1,11 @@
 import React, { useState,useContext } from "react";
 import cl from "./WeightOnTraining.module.css";
 import { TotalPost } from "../TotalPost/TotalPost";
+import { Context } from "../App";
 
 export const WeightOnTraining = () => {
+
+  const {updateTotal,updateTotalNumber} = useContext(Context)
 
   const [inputOne, setInputOne] = useState(0);
   const [inputTwo, setInputTwo] = useState(0);

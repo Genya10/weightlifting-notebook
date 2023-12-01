@@ -18,24 +18,29 @@ export type PostsArray= {
 
 function App() {
 
+  const [postTotals, setPostTotals] = useState<{ total: number; totalNumber: number }[]>([]);
+  const addPostTotal = (postTotal: { total: number; totalNumber: number }) => {
+    setPostTotals((prevPostTotals) => [...prevPostTotals, postTotal]);
+  };
+
   const [posts,setPosts]=useState<PostsArray>([
     {id:1,numb:1},
     {id:2,numb:2},
     {id:3,numb:3},
   ])
 
-  const [total,setTotal] = useState(0);
+  const [total,setTotal] = useState<number[]>([]);
   console.log(total);
-  const [totalNumber,setTotalNumber] = useState(0);
- console.log(totalNumber);
-  const updateTotal = (newTotal:number)=> setTotal(newTotal);
-  const updateTotalNumber = (newTotalNumber:number)=>setTotalNumber(newTotalNumber);
-  const contextValue ={
-    updateTotal,
-    updateTotalNumber
-  }
+  const [totalNumber,setTotalNumber] = useState<number[]>([]);
+  console.log(totalNumber);
+  const updateTotal = (newTotal:number)=> setTotal((prevTotal)=>[...prevTotal,newTotal]);
+  const updateTotalNumber = (newTotalNumber:number)=>setTotalNumber((prevTotalNumber)=>[...prevTotalNumber,newTotalNumber]);
+  //const contextValue ={
+ //   updateTotal,
+  //  updateTotalNumber
+  //}
   return (
-    <Context.Provider value={contextValue}>
+    <Context.Provider value={{updateTotal,updateTotalNumber}}>
 
     <div className="App">
       <Photo/>
